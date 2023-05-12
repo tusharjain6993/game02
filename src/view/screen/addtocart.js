@@ -5,7 +5,7 @@ import { modeofpay, modeofpay1, modeofpay2, modeofpay3 } from '../data/data'
 import { useLocation, useNavigate } from 'react-router-dom'
 function Addtocart() {
     const nav = useNavigate();
-    const [disc, setDisc] = useState(false);
+    const [offer, setOffer] = useState(false);
     const loc = useLocation();
     const [Proj, setProj] = useState(loc.state.finalpage)
     const [name, setName] = useState('');
@@ -36,10 +36,10 @@ function Addtocart() {
                                     </div>
                                     <div className="button">
                                         
-                                        <Button variant="primary" onClick={() => setDisc(!disc)}>OFFERS</Button>
+                                        <Button variant="primary" onClick={() => setOffer(!offer)}>OFFERS</Button>
                                     </div>
                                 </div>
-                                <div className="customer-form-offer">{disc ?
+                                <div className="customer-form-offer">{offer ?
                                     <div className="discount-show-div">
 
                                         <div className="disc-offer">
@@ -50,8 +50,8 @@ function Addtocart() {
                                                 <h3>FOR PAYMENT</h3>
                                             </Button>
                                         </div>
-                                    </div>
-                                    : <div className="customer-form">
+                                    </div>: 
+                                    <div className="customer-form">
                                         <Form>
                                             <Form.Group className="mb-2" >
                                                 <Form.Label className="label-name">Name</Form.Label>
