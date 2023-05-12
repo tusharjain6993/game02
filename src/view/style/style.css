@@ -1,0 +1,225 @@
+.div{background-color: yellow;width:50%;height:50%}
+.gameimg{width:80%}
+.ghost-name{font-size: 40px;right:12%;position: relative;top:15px;}
+.image{width:50%;height:50%}
+.detail-cover{width:100%;height:610px;background-color: rgb(37, 15, 37);}
+.detail-cover-sub{width:95%;height:95%;background-color: black;position: relative;top:3%;left:3%;display: flex;}
+.big-image1{display:flex;}
+
+.full-detail-info{width:50%;height:100%;/* background-color: red; */}
+.detail1-name h2{font-size:25px;padding:0px;margin:0px;position: relative;top:10px;text-align: center;}
+.detail1-OperatingSystem h2{font-size:25px;padding:0px;margin:0px;position: relative;top:10px;text-align: center;}
+.detail1-CPU h2{font-size:25px;padding:0px;margin:0px;position: relative;top:10px;text-align: center;}
+.detail1-RAM h2{font-size:25px;padding:0px;margin:0px;position: relative;top:10px;text-align: center;}
+.detail1-HardDiskSpace h2{font-size:25px;padding:0px;margin:0px;position: relative;top:10px;text-align: center;}
+.detail1-SetupSize h2{font-size:25px;padding:0px;margin:0px;position: relative;top:10px;text-align: center;}
+.detail1-Install h2{font-size:25px;padding:0px;margin:0px;position: relative;top:10px;text-align: center;}
+.detail1-DirectX h2{font-size:25px;padding:0px;margin:0px;position: relative;top:10px;text-align: center;}
+.detail1-GraphicCard h2{font-size:25px;padding:0px;margin:0px;position: relative;top:10px;text-align: center;}
+.detail1-Price h2{font-size:25px;padding:0px;margin:0px;position: relative;top:10px;text-align: center;}
+.menu{margin:10px;color:white;}
+.menu1{padding:42px;position: relative;right:4%;color:white;}
+
+.Pre-order{background-color: black;width:25%;height:8%;position: relative;top:8%;left:35%}
+.pre-order{margin:0px;padding:0px;text-align:center;position:relative;top:10%}
+.Pre-order h3{color:white;font-size: 20px;text-align: center;}
+
+.upcoming{width:100%;height:500px;background-color: rgb(37, 15, 37);}
+.upcoming h1{padding:0px;margin:0px}
+.big-image{width:100%;height:100%;position:relative; }
+
+.image-div{position: relative;}
+.nav{background-color:black}
+
+.footer{background-color:rgb(46, 6, 46);height:200px}
+.footer-inner{background-color: black;width:95%;height:90%;position: relative;left:2%;top:3%}
+.footer p{text-align: center;font-size:30px}
+.menu{padding:40px;color:white;}
+
+
+.cartegory-menu{padding:30px;margin:15px;color:white}
+
+.back-cover-category{width:100%;height:600px;background-color: rgb(37, 15, 37);}
+.category-header{width:100%;height:20%;background-color: black;position: relative;top:3%;display:flex;
+    list-style-type:none;}
+.logo-category{position: relative;height:90px;width:100%;top:10px;}
+
+.category-images{width:95%;height:72%/* ;background-color: pink */;position: relative;left:2%;top:5%;display:flex}
+
+.gamebasedon-details h2{padding:0px;margin:0px;}
+
+.detail-cover{width:100%;height:610px;background-color: rgb(37, 15, 37);}
+.detail-cover-sub{width:95%;height:95%;background-color: black;position: relative;top:3%;left:3%;display: flex;}
+/* .gamename-details{width:47%;height:10%;background-color: red;position: relative;top:3%;left:3%}
+*/
+.full-detail-info{width:55%;height:100%;/* background-color: green; */}
+.image-div-games{width:45%;height:80%;/* background-color:red; */position: relative;top:10%}
+.gamename-details h2{font-size:30px;padding:0px;margin:0px;position: relative;top:10px;text-align: center;}
+.gamebasedon-details h2{font-size:25px;padding:0px;margin:0px;position: relative;top:15px;text-align: center;color:grey}
+.gameSetupSize-details h2{font-size:25px;padding:0px;margin:0px;position: relative;top:15px;text-align: center;color:grey}
+.gameOperatingSystem-details h2{font-size:25px;padding:0px;margin:0px;position: relative;top:15px;text-align: center;color:grey}
+.gameCPU-details h2{font-size:25px;padding:0px;margin:0px;position: relative;top:15px;text-align: center;color:grey}
+.gameLanguage-details h2{font-size:25px;padding:0px;margin:0px;position: relative;top:15px;text-align: center;color:grey}
+.gameInstall-details h2{font-size:25px;padding:0px;margin:0px;position: relative;top:15px;text-align: center;color:grey}
+.gameHardDiskSpace-details h2{font-size:25px;padding:0px;margin:0px;position: relative;top:15px;text-align: center;color:grey}
+.gamePrice-details h2{font-size:25px;padding:0px;margin:0px;position: relative;top:15px;text-align: center;color:grey}
+.image-content-div{width:1250px;height:100%;/* background-color: yellow; */display: flex;position: relative;left:1%}
+
+.ADD-TO-CART{ background-color: black; width:25%;height:8%;position: relative;top:8%;left:35%}
+.addtocart{margin:0px;padding:0px;text-align:center;position:relative;top:10%}
+.ADD-TO-CART h3{color:white;font-size: 20px;}
+
+.detail-cover{width:100%;height:500px;background-color: rgb(37, 15, 37);position: relative;top:5%}
+.detail-cover1{width:95%;height:90%;background-color: black;position: relative;left:3%;}
+
+.profile{width:100%;height:500px;background-color: black;position: relative;top:5%}
+.profile h2{text-align: center;color:red}
+
+.action{width:100%;height:400px;background-color: black;}
+.nav1{background-color:rgb(63, 5, 5);top:10%;position: relative;}
+
+.logocss{width: 100px;height: 70px;position: relative;top:3%}
+.logocss1{width: 100%;height: 70px;position: relative;top:3%}
+
+
+.category-div{width:100%;height:700px}
+
+
+.action-backcover{width:100%;height:3500px;background-color: rgb(37, 15, 37);}
+.action-name-div{width:100%;background-color: black;position: relative;top:2%}
+.action-name-info{position:relative;left:3%;top:5%;width:93%;height:50%;background-color: rgb(37, 15, 37);display: flex;}
+.action-image{width:55%;height:100%;background-color: red;}
+.action-name h3{position: relative;/* background-color: black; */text-align:center;top:5px;font-size:35px}
+.action-content{width:45%;height:100%;/* background-color: yellow; */}
+.action-os h3{/* background-color: red; */position: relative;text-align: center;top:10px;font-size: 30px;}
+.action-cpu h3{position: relative;text-align: center;font-size: 30px;}
+.action-ram h3{position: relative;text-align: center;font-size: 30px;}
+.action-setupsize h3{position: relative;text-align: center;font-size: 30px;}
+.action-hardisk h3{position: relative;text-align: center;font-size: 30px;}
+.action-button{background-color:black;width:30%;position: relative;left:30%;}
+
+.shooting-backcover{width:100%;height:1700px;background-color: rgb(37, 15, 37);}
+.shooting-name-div{width:100%;background-color: black;position: relative;top:2%}
+.shooting-name-info{position:relative;left:3%;top:5%;width:93%;height:50%;background-color: rgb(37, 15, 37);display: flex;}
+.shooting-image{width:55%;height:100%;background-color: red;}
+.shooting-name h3{position: relative;/* background-color: black; */text-align:center;top:5px;font-size:35px}
+.shooting-content{width:45%;height:100%;/* background-color: yellow; */}
+.shooting-os h3{/* background-color: red; */position: relative;text-align: center;top:10px;font-size: 30px;}
+.shooting-cpu h3{position: relative;text-align: center;font-size: 30px;}
+.shooting-ram h3{position: relative;text-align: center;font-size: 30px;}
+.shooting-setupsize h3{position: relative;text-align: center;font-size: 30px;}
+.shooting-hardisk h3{position: relative;text-align: center;font-size: 30px;}
+.shooting-button{background-color:black;width:30%;position: relative;left:30%;}
+
+.sports-backcover{width:100%;height:1700px;background-color: rgb(37, 15, 37);}
+.sports-name-div{width:100%;background-color: black;position: relative;top:2%}
+.sports-name-info{position:relative;left:3%;top:5%;width:93%;height:50%;background-color: rgb(37, 15, 37);display: flex;}
+.sports-image{width:55%;height:100%;background-color: red;}
+.sports-name h3{position: relative;/* background-color: black; */text-align:center;top:5px;font-size:35px}
+.sports-content{width:45%;height:100%;/* background-color: yellow; */}
+.sports-os h3{/* background-color: red; */position: relative;text-align: center;top:10px;font-size: 30px;}
+.sports-cpu h3{position: relative;text-align: center;font-size: 30px;}
+.sports-ram h3{position: relative;text-align: center;font-size: 30px;}
+.sports-setupsize h3{position: relative;text-align: center;font-size: 30px;}
+.sports-hardisk h3{position: relative;text-align: center;font-size: 30px;}
+.sports-button{background-color:black;width:30%;position: relative;left:30%;}
+
+.racing-backcover{width:100%;height:1700px;background-color: rgb(37, 15, 37);}
+.racing-name-div{width:100%;background-color: black;position: relative;top:2%}
+.racing-name-info{position:relative;left:3%;top:5%;width:93%;height:50%;background-color: rgb(37, 15, 37);display: flex;}
+.racing-image{width:55%;height:100%;background-color: red;}
+.racing-name h3{position: relative;/* background-color: black; */text-align:center;top:5px;font-size:35px}
+.racing-content{width:45%;height:100%;/* background-color: yellow; */}
+.racing-os h3{/* background-color: red; */position: relative;text-align: center;top:10px;font-size: 30px;}
+.racing-cpu h3{position: relative;text-align: center;font-size: 30px;}
+.racing-ram h3{position: relative;text-align: center;font-size: 30px;}
+.racing-setupsize h3{position: relative;text-align: center;font-size: 30px;}
+.racing-hardisk h3{position: relative;text-align: center;font-size: 30px;}
+.racing-button{background-color:black;width:30%;position: relative;left:30%;}
+
+.slider2{width:100%;height:500px;/* background-color: yellow */;position: relative;}
+.home{width:100%;height:2700px;background-color:  rgb(37, 15, 37);}
+
+.detail-cover-add{width:100%;height:610px;background-color: rgb(37, 15, 37)}
+.detail-cover1-add{width:95%;height:90%;background-color: black;position: relative;left:3%;}
+
+.tap-to-photo{box-shadow: 5px 5px 20px black;}
+.tap-to-photo:hover{transform:scale(0.9);}
+
+.BILLING h3{font-size:15px}
+
+.paytm{position: relative;top:10px;color: red; }
+
+.google-pay{position: relative;color: purple;left:20px}
+.debit-card{position: relative;left:20px;color:pink}
+
+.button{width:5%;height:30px;background-color: black;position: relative;top:15%;left:30%}
+.customer-form{width:640px;height:100%;/* background-color: blue; */position: relative;}
+.customer-form-offer{width:640px;height:100%;/* background-color: blue; */ position: relative;left:100%;top:-100%}
+
+.add-to-cart-form-info{width:100%;height:500px;/* background-color: yellow; */display:flex}
+
+.addtocart-name-price-div{width:640px;height:100%;/* background-color: purple; */}
+.addtocart-name{width:90%;height:10%;background-color: black;position: relative;left:2%;top:5%;border-radius: 50px;border:solid 1px purple}
+.addtocart-name h3{padding:10px;margin:0px;position: relative;left:5%}
+.addtocart-price{width:90%;height:10%;background-color: black;position: relative;left:2%;top:8%;border-radius: 50px;border:solid 1px purple}
+.addtocart-price h3{padding:10px;margin:0px;position: relative;left:5%}
+
+.customer-name{width:50%;position: relative;left:10%;top:-20px}
+.label-name{position: relative;top:20px;font-size: 20px;}
+
+.label-email{position: relative;font-size: 20px;}
+.customer-email{position: relative;top:-50px;font-size: 20px;width:50%;left:10%}
+
+.label-pass{position: relative;top:-35px;font-size: 20px;}
+.customer-pass{position: relative;top:-80px;font-size: 20px;width:50%;left:14%}
+
+.label-address{position: relative;top:-65px;font-size: 20px;}
+.customer-address{position: relative;top:-110px;font-size: 20px;width:80%;left:14%}
+
+.label-country{position: relative;top:-95px;font-size: 20px;}
+.customer-country{position: relative;top:-140px;font-size: 20px;width:50%;left:22%}
+
+.label-state{position: relative;top:-125px;font-size: 20px;}
+.customer-state{position: relative;top:-165px;font-size: 20px;width:50%;left:22%}
+
+.label-pincode{position: relative;top:-150px;font-size: 20px;}
+.customer-pincode{position: relative;top:-195px;font-size: 20px;width:50%;left:22%}
+
+.discount-show-div{width:35%;height:400px;/* background-color: black; */position: relative;}
+.disc-offer{width:100%;height:30%;/* background-color: red; */position: relative;top:10%}
+
+.addtocart-paymentbutton{width:30%;height:45px;background-color: black;position: relative;top:-180px;left:20%}
+
+.offer-heading{width:50%;height:10%;/* background-color: red; */position: relative;top:10%;left:20%;color:white}
+
+.billing-cover-page{width:100%;background-color: blue;position: relative;height:500px}
+.billing-cover-add{width:100%;height:100%;background-color: black;position: relative;display:flex}
+
+.mode-of-payment{width:50%;height:100%;background-color:red;position: relative;}
+
+.mode-of-payment-pay{width:50%;height:100%;background-color: green;}
+
+
+
+
+
+
+
+
+/* 
+.mode{width:25%;height:25%;  background-color: pink;  position: relative;top:10%;left:10%}
+.mode h2{padding:0px;margin:0px}
+.mode-flex{display: flex;width:80%;height:50%; background-color: yellow; position: relative;left:10%}
+.mode-img1{width:45%;height:50%;background-color: black;position: relative;top:5%}
+.pre-pay-img{width:80%;height:100%; background-color: red; position: relative;}
+.mode-img2{width:45%;height:60%; background-color: black; position: relative;top:5%}
+.pre-pay-img1{width:80%;height:100%; background-color: red; position: relative;}
+
+.cards{width:100%;height:600px;background-color: rgb(37, 15, 37);position: relative;}
+.mode-img3{width:45%;height:60%; background-color: black; position: relative;top:5%}
+.pre-pay-img2{width:70%;height:100%; background-color: red; position: relative;}
+
+.mode-img4{width:45%;height:60%;background-color: black; position: relative;top:5%}
+.pre-pay-img3{width:70%;height:100%; background-color: red; position: relative;}
+ */
