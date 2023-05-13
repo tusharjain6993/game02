@@ -38,14 +38,6 @@ function Billingamount() {
                             <img src={proje.image} style={{ width: '100%', height: '100%', position: 'absolute', display: 'flex', opacity: '0.38' }} />
 
                             <div className="mode-of-payment">
-                                <div className="select-bank">
-                                    <select className="select" value={value} onChange={handleChange}>
-                                        <option value="">--Select Your Bank--</option>
-                                        <option value="option1">SBI</option>
-                                        <option value="option2">HDFC</option>
-                                        <option value="option3">BANK OF BARODA</option>
-                                    </select>
-                                </div>
                                 <div className="mode-of-payment-pay">
                                     <label className='label-card'>
                                         <input type="radio" value="option1" checked={selectedOption === "option1"} onChange={(d) => setSelectedOption(d.target.value)} />
@@ -60,10 +52,62 @@ function Billingamount() {
                                         GOOGLE PAY
                                     </label>
                                 </div>
-                                <div className="card-paytm-googlepay"></div>
+                                <div className="card-paytm-googlepay">
+                                    {selectedOption === 'option1' ? (
+                                        <div className="card-div">
+                                            <div className="cardwala">
+                                                <div className="select-bank">
+                                                    <select className="select" value={value} onChange={handleChange}>
+                                                        <option value="">--Select Your Bank--</option>
+                                                        <option value="option1">SBI</option>
+                                                        <option value="option2">HDFC</option>
+                                                        <option value="option3">BANK OF BARODA</option>
+                                                    </select>
+                                                    <Form>
+                                                        <div className="label-cardnumber-div">
+                                                            <Form.Group className="mb-2" >
+                                                                <Form.Label className="label-cardnumber">Card Number</Form.Label>
+                                                                <Form.Control className="card-number" type="text" placeholder="Enter Card Number" />
+                                                            </Form.Group>
+                                                        </div>
+                                                        <div className="label-expirydate-div">
+                                                            <Form.Group className="mb-2" >
+                                                                <Form.Label className="label-expiry">Expiry Date</Form.Label>
+                                                                <Form.Control className="card-expirydate" type="text" placeholder="Expiry Date" />
+                                                            </Form.Group>
+                                                        </div>
+                                                        <div className="label-cvv-div">
+                                                            <Form.Group className="mb-2" controlId="formBasicPassword">
+                                                                <Form.Label className="label-cvv">CVV</Form.Label>
+                                                                <Form.Control className="card-cvv" type="text" placeholder="CVV" />
+                                                            </Form.Group>
+                                                        </div>
+                                                        <div className="label-holder-div">
+                                                            <Form.Group className="mb-2" >
+                                                                <Form.Label className="label-holder">Holder Name</Form.Label>
+                                                                <Form.Control className="card-holder" type="text" placeholder="CARD Holder Name" />
+                                                            </Form.Group>
+                                                        </div>
+                                                        <div className="button-for-pay-div">
+                                                            <Button className="button-pay"variant="primary">PLACE ORDER</Button>
+                                                        </div>
+                                                    </Form>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    ) : selectedOption === 'option2' ? (
+                                        <div className="paytm-div">
+                                            <p>paytm div</p>
+                                        </div>
+                                    ) : selectedOption === 'option3' ? (
+                                        <div className="googlepay-div">
+                                            <p>google pay div</p>
+                                        </div>
+                                    ) : <p style={{fontSize:'30px',margin:'80px'}}>PLEASE CHOOSE PAYMENT MODE</p>}
+                                </div>
                             </div>
                             <div className="payment"></div>
-
                         </div>
                     </div>
                 </Col>
