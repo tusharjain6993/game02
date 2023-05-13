@@ -156,7 +156,7 @@ function Billingamount() {
                                     <div className="payment-discount-div">
                                         <Form.Group className="mb-2" >
                                             <Form.Label className="label-payment-discount">DISCOUNT</Form.Label>
-                                            <Form.Control className="payment-discount" type="text"  />
+                                            <Form.Control className="payment-discount" type="text"value={discountamount} />
                                         </Form.Group>
                                     </div>                                    
                                     <div className="payment-finalamt-div">
