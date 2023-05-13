@@ -255,15 +255,16 @@
 .payment-price-div{width:100%;height:70px;/* background-color: blue; */position: relative;}
 .label-payment-price{top:15px;position: relative;color:white;font-size: 25px;left:3%}
 .payment-price{width:40%;position: relative;height:60px;/* background-color: red; */top:-40px;left:20%}
-.payment-discount-div{width:100%;height:70px;/* background-color: pink; */top:10px;position: relative;}
+
+.payment-discount-div{width:100%;height:70px; /* background-color: pink; */ top:3px;position: relative;}
 .label-payment-discount{top:15px;position: relative;color:white;font-size: 25px;left:3%}
 .payment-discount{width:40%;position: relative;height:60px;/* background-color: red; */top:-40px;left:25%}
 
 .payment-gst-div{width:100%;height:70px;/* background-color: purple; */top:20px;position: relative;}
-.label-payment-gst{top:15px;position: relative;color:white;font-size: 25px;left:3%}
-.payment-gst{width:40%;position: relative;height:60px;/* background-color: red; */top:-40px;left:20%}
+.label-payment-gst{position: relative;color:white;font-size: 25px;left:3%}
+.payment-gst{width:40%;position: relative;height:60px;/* background-color: red; */top:-60px;left:20%}
 
-.payment-finalamt-div{width:100%;height:70px;/* background-color: black; */top:30px;position: relative;}
+.payment-finalamt-div{width:100%;height:70px;/* background-color: black; */top:8px;position: relative;}
 .label-payment-finalamt{top:15px;position: relative;color:white;font-size: 25px;left:3%}
 .payment-finalamt{width:40%;position: relative;height:60px;/* background-color: red; */top:-40px;left:35%}
 
