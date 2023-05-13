@@ -71,7 +71,7 @@ function App() {
             </>
             }
             
-             <NavDropdown className="menu1" title="MY ACCOUNT" id="navbarScrollingDropdown">
+             <NavDropdown  className="menu1" title="MY ACCOUNT" id="navbarScrollingDropdown">
               <NavDropdown.Item href="Profile">PROFILE</NavDropdown.Item>
               <NavDropdown.Item href="">PURCHASE HISTORY</NavDropdown.Item>
               

@@ -59,9 +59,9 @@ function Billingamount() {
                                                 <div className="select-bank">
                                                     <select className="select" value={value} onChange={handleChange}>
                                                         <option value="">--Select Your Bank--</option>
-                                                        <option value="option1">SBI</option>
-                                                        <option value="option2">HDFC</option>
-                                                        <option value="option3">BANK OF BARODA</option>
+                                                        <option value="option4">SBI</option>
+                                                        <option value="option5">HDFC</option>
+                                                        <option value="option6">BANK OF BARODA</option>
                                                     </select>
                                                     <Form>
                                                         <div className="label-cardnumber-div">
@@ -89,7 +89,7 @@ function Billingamount() {
                                                             </Form.Group>
                                                         </div>
                                                         <div className="button-for-pay-div">
-                                                            <Button className="button-pay"variant="primary">PLACE ORDER</Button>
+                                                            <Button className="button-pay" variant="primary">PLACE ORDER</Button>
                                                         </div>
                                                     </Form>
                                                 </div>
@@ -98,16 +98,78 @@ function Billingamount() {
                                         </div>
                                     ) : selectedOption === 'option2' ? (
                                         <div className="paytm-div">
-                                            <p>paytm div</p>
+                                            <div className="paytm-phonenumber-name-div">
+                                                <Form>
+                                                    <div className="paytm-name">
+                                                        <Form.Group className="mb-2" >
+                                                            <Form.Label className="label-paytm-name">Holder Name</Form.Label>
+                                                            <Form.Control className="paytm-holdername" type="text" placeholder="HOLDER NAME" />
+                                                        </Form.Group>
+                                                    </div>
+                                                    <div className="paytm-phonenumber">
+                                                        <Form.Group className="mb-2" >
+                                                            <Form.Label className="label-paytm-phonenumber">Phone Number</Form.Label>
+                                                            <Form.Control className="paytm-holder-number" type="text" placeholder="PHONE NUMBER" />
+                                                        </Form.Group>
+                                                    </div>
+                                                </Form>
+                                                <Button className="button-paytm-pay" variant="primary">PLACE ORDER</Button>
+                                            </div>
                                         </div>
                                     ) : selectedOption === 'option3' ? (
                                         <div className="googlepay-div">
-                                            <p>google pay div</p>
+                                            <div className="googlepay-upi-name-div">
+                                                <Form>
+                                                    <div className="googlepay-name">
+                                                        <Form.Group className="mb-2" >
+                                                            <Form.Label className="label-googlepay-name">Holder Name</Form.Label>
+                                                            <Form.Control className="googlepay-holdername" type="text" placeholder="HOLDER NAME" />
+                                                        </Form.Group>
+                                                    </div>
+                                                    <div className="googlepay-upiphonenumber">
+                                                        <Form.Group className="mb-2" >
+                                                            <Form.Label className="label-googlepay-phone">Phone Number</Form.Label>
+                                                            <Form.Control className="googlepay-holder-number" type="text" placeholder="UPI ID" />
+                                                        </Form.Group>
+                                                    </div>
+                                                </Form>
+                                                <Button className="button-paytm-pay" variant="primary">PLACE ORDER</Button>
+                                            </div>
                                         </div>
-                                    ) : <p style={{fontSize:'30px',margin:'80px'}}>PLEASE CHOOSE PAYMENT MODE</p>}
+                                    ) : <p style={{ fontSize: '30px', margin: '80px' }}>PLEASE CHOOSE PAYMENT MODE</p>}
                                 </div>
                             </div>
-                            <div className="payment"></div>
+                            <div className="payment">
+                                <Form>
+                                    <div className="payment-price-div">
+                                        <Form.Group className="mb-2" >
+                                            <Form.Label className="label-payment-price">TOTAL</Form.Label>
+                                            <Form.Control className="payment-price" type="text" value={proje.Price} />
+                                        </Form.Group>
+                                    </div>
+                                    <div className="payment-discount-div">
+                                        <Form.Group className="mb-2" >
+                                            <Form.Label className="label-payment-discount">DISCOUNT</Form.Label>
+                                            <Form.Control className="payment-discount" type="text"  />
+                                        </Form.Group>
+                                    </div>
+                                    <div className="payment-gst-div">
+                                        <Form.Group className="mb-2" >
+                                            <Form.Label className="label-payment-gst">GST</Form.Label>
+                                            <Form.Control className="payment-gst" type="text"/>
+                                        </Form.Group>
+                                    </div>
+                                    <div className="payment-finalamt-div">
+                                        <Form.Group className="mb-2" >
+                                            <Form.Label className="label-payment-finalamt">FINAL AMOUNT</Form.Label>
+                                            <Form.Control className="payment-finalamt" type="text"/>
+                                        </Form.Group>
+                                    </div>
+                                    <div className="thankyou">
+                                        <h3>THANKYOU FOR PURCHASING GAME</h3>
+                                    </div>
+                                </Form>
+                            </div>
                         </div>
                     </div>
                 </Col>
