@@ -9,13 +9,31 @@ function Billingamount() {
     console.log(proje);
     const [discou, setDiscou] = useState();
     const [finalamt, setFinalamt] = useState();
+    const [paytmfinal,setPaytmFinal]=useState();
+    const[paytmdisc,setPaytmDisc]=useState();
+    const[paytmgst,setPaytmGst]=useState();
     const [value, setValue] = useState('');
     const [selectedOption, setSelectedOption] = useState('');
 
-    const total = proje.Price
+    var total = proje.Price;
     console.log(total);
     var discountamount;
     var final;
+    var paydis;
+    var gstno;
+    var paytmamt;
+    var gstnototal;     /* gstnototal=gstno+total */
+
+    function PaytmAmt()
+    {
+        gstno=total*18/100;
+        setPaytmGst(gstno);
+        paydis=(total-gstno)*15/100;
+        setPaytmDisc(paydis);
+        paytmamt=total-(gstno+paydis);
+        setPaytmFinal(paytmamt);
+         
+    }
     function handleClick() {
         discountamount = total * 10 / 100;
         setDiscou(discountamount);
@@ -112,8 +130,9 @@ function Billingamount() {
                                                             <Form.Control className="paytm-holder-number" type="text" placeholder="PHONE NUMBER" />
                                                         </Form.Group>
                                                     </div>
+                                                    
                                                 </Form>
-                                                <Button className="button-paytm-pay" variant="primary">PLACE ORDER</Button>
+                                                <Button className="button-paytm-pay" variant="primary" onClick={PaytmAmt}>PLACE ORDER</Button>
                                             </div>
                                         </div>
                                     ) : selectedOption === 'option3' ? (
@@ -150,21 +169,22 @@ function Billingamount() {
                                     <div className="payment-gst-div">
                                         <Form.Group className="mb-2" >
                                             <Form.Label className="label-payment-gst">GST</Form.Label>
-                                            <Form.Control className="payment-gst" type="text"/>
+                                            <Form.Control className="payment-gst" type="text" value={paytmgst}/>
                                         </Form.Group>
                                     </div>
                                     <div className="payment-discount-div">
                                         <Form.Group className="mb-2" >
                                             <Form.Label className="label-payment-discount">DISCOUNT</Form.Label>
-                                            <Form.Control className="payment-discount" type="text"value={discountamount} />
+                                            <Form.Control className="payment-discount" type="text" value={paytmdisc}  />
                                         </Form.Group>
                                     </div>                                    
                                     <div className="payment-finalamt-div">
                                         <Form.Group className="mb-2" >
                                             <Form.Label className="label-payment-finalamt">FINAL AMOUNT</Form.Label>
-                                            <Form.Control className="payment-finalamt" type="text"/>
+                                            <Form.Control className="payment-finalamt" type="text" value={paytmfinal}/>
                                         </Form.Group>
                                     </div>
+                                    
                                     <div className="thankyou">
                                         <h3>THANKYOU FOR PURCHASING GAME</h3>
                                     </div>

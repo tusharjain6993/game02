@@ -43,8 +43,8 @@ function Addtocart() {
                                     <div className="discount-show-div">
 
                                         <div className="disc-offer">
-                                            <p>10% Instant Discount up to INR 1000 on Kotak Credit Card EMI Trxn. Min purchase value INR 5000</p>
-                                            <p>10% Instant Discount up to INR 500 on ICICI Debit Card Trxn. Min purchase value INR 5000</p>
+                                            <p>10% Instant Discount on google pay on Min purchase value INR 1500</p>
+                                            <p>15% Instant Discount on paytm on Min purchase value INR 3000</p>
                                             <Button variant="outline-primary" className="BILLING"
                                                 onClick={() => nav('/billingamount', { state: { billingpage: Proj } })}>
                                                 <h3>FOR PAYMENT</h3>
