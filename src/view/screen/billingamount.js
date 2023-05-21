@@ -166,7 +166,7 @@ function Billingamount() {
                                             <Form.Control className="payment-price" type="text" value={proje.Price} />
                                         </Form.Group>
                                     </div>
-                                    <div className="payment-gst-div">
+                                    {/* <div className="payment-gst-div">
                                         <Form.Group className="mb-2" >
                                             <Form.Label className="label-payment-gst">GST</Form.Label>
                                             <Form.Control className="payment-gst" type="text" value={paytmgst}/>
@@ -177,7 +177,7 @@ function Billingamount() {
                                             <Form.Label className="label-payment-discount">DISCOUNT</Form.Label>
                                             <Form.Control className="payment-discount" type="text" value={paytmdisc}  />
                                         </Form.Group>
-                                    </div>                                    
+                                    </div>                     */}                
                                     <div className="payment-finalamt-div">
                                         <Form.Group className="mb-2" >
                                             <Form.Label className="label-payment-finalamt">FINAL AMOUNT</Form.Label>

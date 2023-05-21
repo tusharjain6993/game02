@@ -66,12 +66,12 @@ function App() {
               })
             }
             {user? null:<>
-              <Nav.Link href="/register">REGISTER</Nav.Link>
-              <Nav.Link href="/login">LOGIN</Nav.Link>
+              <Nav.Link style={{color:'white'}} href="/register">REGISTER</Nav.Link>
+              <Nav.Link style={{color:'white'}} href="/login">LOGIN</Nav.Link>
             </>
             }
             
-             <NavDropdown  className="menu1" title="MY ACCOUNT" id="navbarScrollingDropdown">
+             <NavDropdown  className="menu1" title="MY ACCOUNT" id="navbarScrollingDropdown" >
               <NavDropdown.Item href="Profile">PROFILE</NavDropdown.Item>
               <NavDropdown.Item href="">PURCHASE HISTORY</NavDropdown.Item>
               
