@@ -287,7 +287,7 @@ export var upcominginfo=[
         Price:'1999'
 },
 {
-        name:'THE LAST OF US PART - 1 ',
+        name:'ASSASSIN CREED VALHALLA ',
         id:3,
         OperatingSystem: "64-bit Windows 10",
         CPU: "Processor: AMD Ryzen 7 1700 - 3.0 Ghz / INTEL i7-6700 3.4 Ghz",
