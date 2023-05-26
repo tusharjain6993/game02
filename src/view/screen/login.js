@@ -24,7 +24,7 @@ let submitlogin=async()=>{
       if(success){
       alert(message)
    console.log(data);
-   localStorage.setItem('user',true)
+   localStorage.setItem('user',email)
       nav("/")
       }
       else{

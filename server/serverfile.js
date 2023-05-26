@@ -61,7 +61,7 @@ app.post('/jsontocsv',function(req,res){
       // log error if any
       console.log(err)
     })
-
+/* 
    
     const user = req?.query?.username;
     console.log(user);
@@ -86,20 +86,12 @@ app.post('/jsontocsv',function(req,res){
     const parser = new Parser();
     const csv = parser.parse(cartitem)
       res.attachment('product.csv')
-    res.status(200).send(csv)
+    res.status(200).send(csv) */
    })
 
 app.post('/postdata',function(req,res){
     res.send(req.body)
    })
-app.post('/addtocart',function(req,res){
-    fs.appendFileSync('./data/addtocart.json', JSON.stringify(req.body),"utf8")
-    fs.appendFileSync('./data/addtocart.json', "\n","utf8")
-    
-    res.send(req.body)
- })
-
- 
  app.post('/register',function(req,res){        /* req:request  res:response
  */  
   
@@ -144,6 +136,16 @@ app.post('/addtocart',function(req,res){
    
  })
 
+
+ app.post('/addtocart',function(req,res){
+    fs.appendFileSync('./data/addtocart.json', JSON.stringify(req.body),"utf8")
+    fs.appendFileSync('./data/addtocart.json', "\n","utf8")
+    
+    res.send(req.body)
+ })
+
+ 
+
  app.post('/showtocart',function(req,res){
     let data=fs.readFileSync('./data/addtocart.json',"utf8")
     let adddata=[]
@@ -165,6 +167,26 @@ app.post('/addtocart',function(req,res){
    
     res.send(cartitem)
  })
+
+
+
+ app.post('/productadd',function(req,res){
+    fs.appendFileSync('./data/productadd.json', JSON.stringify(req.body),"utf8")
+    fs.appendFileSync('./data/productadd.json', "\n","utf8")
+    
+    res.send(req.body)
+ })
+
+ 
+
+
+
+
+
+
+
+
+
 app.listen(8080,function(err,data){
     if(err){
         console.log(err);

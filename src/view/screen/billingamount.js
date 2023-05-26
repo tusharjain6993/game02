@@ -1,8 +1,10 @@
 import { Row, Col, Container, Button, Form, ToggleButtonGroup, ToggleButton, Dropdown } from 'react-bootstrap';
 import { useState } from 'react';
 import '../style/style.css'
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 function Billingamount() {
+    const nav =useNavigate()
     const loc = useLocation();
     const [proje, setProje] = useState(loc.state.billingpage)
 
@@ -21,17 +23,29 @@ function Billingamount() {
     var final;
     var paydis;
     var gstno;
-    var paytmamt;
+    var paytmamt=0;
     var gstnototal;     /* gstnototal=gstno+total */
 
-    function PaytmAmt()
+    async function PaytmAmt()
     {
         gstno=total*18/100;
         setPaytmGst(gstno);
-        paydis=(total-gstno)*15/100;
+        console.log(gstno);
+        paydis=(total)*15/100;
+        
         setPaytmDisc(paydis);
-        paytmamt=total-(gstno+paydis);
-        setPaytmFinal(paytmamt);
+        console.log(paydis);
+        console.log(total);
+        paytmamt=parseInt(total)+parseInt(gstno);
+        console.log(paytmamt);
+        setPaytmFinal(paytmamt-parseInt(paydis));
+        nav('/profile')
+       
+        let params={
+            ...proje
+        }
+        let res =await axios.post("productadd",params).catch(err=>alert(err))
+        console.log(res.data);
          
     }
     function handleClick() {
