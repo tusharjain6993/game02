@@ -48,6 +48,22 @@ function Billingamount() {
         console.log(res.data);
          
     }
+    function PaytmAmtTotal()
+    {
+        gstno=total*18/100;
+        setPaytmGst(gstno);
+        console.log(gstno);
+        paydis=(total)*15/100;
+        
+        setPaytmDisc(paydis);
+        console.log(paydis);
+        console.log(total);
+        paytmamt=parseInt(total)+parseInt(gstno);
+        console.log(paytmamt);
+        setPaytmFinal(paytmamt-parseInt(paydis));
+         
+    }
+
     function handleClick() {
         discountamount = total * 10 / 100;
         setDiscou(discountamount);
@@ -146,7 +162,7 @@ function Billingamount() {
                                                     </div>
                                                     
                                                 </Form>
-                                                <Button className="button-paytm-pay" variant="primary" onClick={PaytmAmt}>PLACE ORDER</Button>
+                                                <Button className="button-paytm-pay" variant="primary" onClick={PaytmAmtTotal}>PLACE ORDER</Button>
                                             </div>
                                         </div>
                                     ) : selectedOption === 'option3' ? (
@@ -198,7 +214,7 @@ function Billingamount() {
                                             <Form.Control className="payment-finalamt" type="text" value={paytmfinal}/>
                                         </Form.Group>
                                     </div>
-                                    
+                                    <Button style={{padding:'10px',position:'relative',top:'40px',left:'35%'}} variant="primary" onClick={PaytmAmt}>PLACE ORDER</Button>
                                     <div className="thankyou">
                                         <h3>THANKYOU FOR PURCHASING GAME</h3>
                                     </div>

@@ -71,9 +71,9 @@ function App() {
             </>
             }
             
-             <NavDropdown  className="menu1"  style={{color:'white',backgroundColor:'white'}} title="MY ACCOUNT" id="navbarScrollingDropdown" >
+             <NavDropdown  className="menu1"  style={{color:'white'}} title="MY ACCOUNT" id="navbarScrollingDropdown" >
               <NavDropdown.Item href="Profile">PROFILE</NavDropdown.Item>
-              <NavDropdown.Item href="">PURCHASE HISTORY</NavDropdown.Item>
+              
               
             </NavDropdown>
             </Nav>
