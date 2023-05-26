@@ -39,42 +39,8 @@ function ActionAdventure(){
                                     </Button>
                             </Col>
                         </Row></div>
-                        
-                       /*  <div className="action-name-div">
-                            <div className="action-name-info ">
-                                <div className="action-image">
-                                <img src={d.image} style={{ width: '100%', height: '100%' }} />
-                                </div>
-                                <div className="action-content">
-                                    <div className="action-name">
-                                        <h3 style={{ margin: '0', padding: '0' }}>{d.name}</h3>
-                                    </div>
-                                    <div className="action-os">
-                                        <h3>{d.OperatingSystem}</h3>
-                                    </div>
-                                    <div className="action-cpu">
-                                        <h3>{d.CPU}</h3>
-                                    </div>
-                                    <div className="action-ram">
-                                        <h3>{d.RAM}</h3>
-                                    </div>
-                                    <div className="action-setupsize">
-                                        <h3>{d.SetupSize}</h3>
-                                    </div>
-                                    <div className="action-hardisk">
-                                        <h3>{d.HardDiskSpace}</h3>
-                                    </div>
-                                    <Button className="action-button" onClick={() => nav('/detail', { state: { product: d } })}>
-                                        PURCHASE
-                                    </Button>
-                                </div>
-                            </div>
-                        </div> */
                     )
                 })
             }
-            </div></>
-
-    )
-}
+            </div></>)}
 export default ActionAdventure

@@ -1,5 +1,5 @@
 import { Col, Container, Row, Carousel, Card, ListGroup } from "react-bootstrap";
-import { games, bannerpics2, bannerpics,games1 } from "../data/data";
+import { games, bannerpics2, bannerpics, games1 } from "../data/data";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
@@ -73,7 +73,6 @@ function Home() {
                                 bannerpics2.map(function (d) {
                                     return (
                                         <Carousel.Item interval={800}>
-
                                             <img
                                                 style={{ width: '100%', height: '500px' }}
                                                 src={d}

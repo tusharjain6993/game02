@@ -58,15 +58,15 @@ function Billingamount() {
                             <div className="mode-of-payment">
                                 <div className="mode-of-payment-pay">
                                     <label className='label-card'>
-                                        <input type="radio" value="option1" checked={selectedOption === "option1"} onChange={(d) => setSelectedOption(d.target.value)} />
+                    <input type="radio" value="option1" checked={selectedOption === "option1"} onChange={(d) => setSelectedOption(d.target.value)} />
                                         CARD
                                     </label>
                                     <label className='label-paytm'>
-                                        <input type="radio" value="option2" checked={selectedOption === "option2"} onChange={(d) => setSelectedOption(d.target.value)} />
+                    <input type="radio" value="option2" checked={selectedOption === "option2"} onChange={(d) => setSelectedOption(d.target.value)} />
                                         PAYTM WALLET
                                     </label>
                                     <label className='label-googlepay'>
-                                        <input type="radio" value="option3" checked={selectedOption === "option3"} onChange={(d) => setSelectedOption(d.target.value)} />
+                    <input type="radio" value="option3" checked={selectedOption === "option3"} onChange={(d) => setSelectedOption(d.target.value)} />
                                         GOOGLE PAY
                                     </label>
                                 </div>
