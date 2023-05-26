@@ -7,6 +7,12 @@ function Profile() {
     const [password, setPassword] = useState('');
     const [phone,setPhone]=useState('');
     const [age,setAge]=useState('');
+    const[username,setUsername] = useState(localStorage.getItem('user'))
+
+    async function download(){
+        let url = `http://localhost:8080/download?username=${username}`;
+		window.location.href = url;
+    }
     return (
         <>
        <div className="profile">
@@ -14,7 +20,7 @@ function Profile() {
         <Container>
             <Row>
                 <Col>
-                    
+                 <button onClick={download}>download</button>   
                 </Col>
             </Row>
         </Container>
