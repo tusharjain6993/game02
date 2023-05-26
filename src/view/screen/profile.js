@@ -2,6 +2,7 @@ import '../style/style.css'
 import { Row,Col,Container,Button ,Form} from 'react-bootstrap';
 import { useState } from 'react';
 function Profile() {
+    
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -20,8 +21,8 @@ function Profile() {
         <Container>
             <Row>
                 <Col>
-                 <button onClick={download}>download</button>   
-              
+                <Button variant="primary">DOWNLOAD</Button>  
+                             
                 </Col>
             </Row>
         </Container>

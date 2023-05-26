@@ -39,7 +39,7 @@ function Billingamount() {
         paytmamt=parseInt(total)+parseInt(gstno);
         console.log(paytmamt);
         setPaytmFinal(paytmamt-parseInt(paydis));
-        nav('/profile')
+         nav('/profile')
        
         let params={
             ...proje
